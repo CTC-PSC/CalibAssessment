@@ -25,7 +25,7 @@ rm(list=ls()) #Clear the workspace and load necessary packages
     obscat     = read.csv("obsCatch.csv", header=TRUE)
     modfishery = read.csv("fisheryCodes.csv", header=TRUE)
     modstocks  = read.csv("stockCodes.csv", header=TRUE)
-    comp = StockCompData(stockmap = stockmap, fisherymap = fisherymap, auxcat = auxcat, obscat = obscat, aabmcat = aabmcat, isbmcat = isbmcat, write_output = NULL)
+    comp_1702 = StockCompData(stockmap = stockmap, fisherymap = fisherymap, auxcat = auxcat, obscat = obscat, aabmcat = aabmcat, isbmcat = isbmcat, write_output = NULL)
     cat_1702 = CatchData(fisherymap = fisherymap, auxcat = auxcat, obscat = obscat, aabmcat = aabmcat, isbmcat = isbmcat, write_output = NULL)
     #output directory
     this_is_the_place <- "C:\\zWork\\C&E\\2017 StockCompStacked\\clb1701 figures"
